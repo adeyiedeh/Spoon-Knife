@@ -1,0 +1,49 @@
+on LoadMessages
+   
+   --Step 3: in our flow to load our list
+   --We need to put the message data into an array
+   put "true" into MsgData[1]["NewMessage"]
+   put "Paul Zemanek" into MsgData[1]["Sender"]
+   put "It would be like a reunion." into MsgData[1]["MessageText"]
+   put "9:41 AM" into MsgData[1]["MessageTime"]
+   
+   put "false" into MsgData[2]["NewMessage"]
+   put "Eric Haims" into MsgData[2]["Sender"]
+   put "Way. And we were just talking about you." into MsgData[2]["MessageText"]
+   put "9:39 AM" into MsgData[2]["MessageTime"]
+   
+   put "false" into MsgData[3]["NewMessage"]
+   put "Blair Lockhart" into MsgData[3]["Sender"]
+   put "Whoa, have you watched episode 4 yet? I did NOT see that coming." into MsgData[3]["MessageText"]
+   put "Sunday" into MsgData[3]["MessageTime"]
+   
+   put "false" into MsgData[4]["NewMessage"]
+   put "Derrick Thornton" into MsgData[4]["Sender"]
+   put "No way! Call me. NOW." into MsgData[4]["MessageText"]
+   put "Saturday" into MsgData[4]["MessageTime"]
+   
+   put "false" into MsgData[5]["NewMessage"]
+   put "Lane Foard" into MsgData[5]["Sender"]
+   put "And that’s a little something I like to call: BOOM!" into MsgData[5]["MessageText"]
+   put "Friday" into MsgData[5]["MessageTime"]
+   
+   put "false" into MsgData[6]["NewMessage"]
+   put "Brian Schmitt" into MsgData[6]["Sender"]
+   put "Super steak burrito. Hot salsa. No rice." into MsgData[6]["MessageText"]
+   put "Thursday" into MsgData[6]["MessageTime"]
+   
+   put "false" into MsgData[7]["NewMessage"]
+   put "Erin Steed" into MsgData[7]["Sender"]
+   put "Looks like we’re 8 for dinner now." into MsgData[7]["MessageText"]
+   put "Wednesday" into MsgData[7]["MessageTime"]
+   
+   --Step 4: in our flow to load our list
+   --Below is the code that will send the data to the grid.
+   
+   
+   --Step 5: in our flow to load our list
+   --The FillInData from the Grid's Row Behavior will do the 
+   --process of loading the data in the grid to look like our
+   --row template. You can see this in the Row Behavior.
+   
+end LoadMessages
